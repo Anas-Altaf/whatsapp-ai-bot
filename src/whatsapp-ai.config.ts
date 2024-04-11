@@ -5,7 +5,7 @@ const config: Config = {
     chatGPTModel: "gpt-3.5-turbo", // learn more about GPT models https://platform.openai.com/docs/models
     models: {
         ChatGPT: {
-            prefix: '!chatgpt', // Prefix for the ChatGPT model
+            prefix: '!gpt', // Prefix for the ChatGPT model
             enable: true // Whether the ChatGPT model is enabled or not
         },
         DALLE: {
@@ -17,11 +17,11 @@ const config: Config = {
             enable: true // Whether the StableDiffusion model is enabled or not
         },
         GeminiVision: {
-            prefix: '!gemini-vision', // Prefix for the GeminiVision model
+            prefix: '!gemvision', // Prefix for the GeminiVision model
             enable: true // Whether the GeminiVision model is enabled or not
         },
         Gemini: {
-            prefix: '!gemini', // Prefix for the Gemini model
+            prefix: '!gem', // Prefix for the Gemini model
             enable: true // Whether the Gemini model is enabled or not
         },
         Custom: [
@@ -43,7 +43,7 @@ const config: Config = {
         /** if enable, reply to those messages start with prefix  */
         enable: true, // Whether prefix messages are enabled or not
         /** default model to use if message not starts with prefix and enable is false  */
-        defaultModel: 'ChatGPT' // Default model to use if no prefix is present in the message
+        defaultModel: 'gemini' // Default model to use if no prefix is present in the message
     }
 };
 
