@@ -2,7 +2,7 @@
 import { Config } from './types/Config';
 
 const config: Config = {
-    chatGPTModel: "gpt-3.5-turbo", // learn more about GPT models https://platform.openai.com/docs/models
+    chatGPTModel: 'gpt-3.5-turbo', // learn more about GPT models https://platform.openai.com/docs/models
     models: {
         ChatGPT: {
             prefix: '!gpt', // Prefix for the ChatGPT model
@@ -17,7 +17,7 @@ const config: Config = {
             enable: true // Whether the StableDiffusion model is enabled or not
         },
         GeminiVision: {
-            prefix: '!gemvision', // Prefix for the GeminiVision model
+            prefix: '!gemv', // Prefix for the GeminiVision model
             enable: true // Whether the GeminiVision model is enabled or not
         },
         Gemini: {
@@ -31,11 +31,11 @@ const config: Config = {
                 prefix: '!bot', // Prefix for the custom model
                 enable: true, // Whether the custom model is enabled or not
                 /**
-                    * context: "file-path (.txt, .text, .md)",
-                    * context: "text url",
-                    * context: "text"
-                  */
-                context: './static/whatsapp-ai-bot.md', // Context for the custom model
+                 * context: "file-path (.txt, .text, .md)",
+                 * context: "text url",
+                 * context: "text"
+                 */
+                context: './static/whatsapp-ai-bot.md' // Context for the custom model
             }
         ]
     },
